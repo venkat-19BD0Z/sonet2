@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Branches">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/cseicon_iv"
+            android:layout_width="200dp"
+            android:layout_height="221dp"
+            android:padding="10dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/cse1" />
+
+        <ImageView
+            android:id="@+id/iticon_iv"
+            android:layout_width="202dp"
+            android:layout_height="219dp"
+            android:padding="10dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/iticon" />
+
+        <ImageView
+            android:id="@+id/eceicon_iv"
+            android:layout_width="202dp"
+            android:layout_height="244dp"
+            android:padding="10dp"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/eceicon" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
